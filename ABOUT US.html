@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    yle>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        background-color: white;
+    }
+    .slide{
+        height: 100%;
+        width: 180px;
+        position: absolute;
+        background-color: #fff;
+        transition: 0.5s ease;
+        transform: translateX(-180px);
+    }
+    
+    h1{
+        color: orangered;
+        font-weight: 800;
+        text-align: right;
+        padding: 10px 0;
+        padding-right: 30px;
+        pointer-events: none;
+    }
+    ul li {
+        list-style: none;
+    }
+    ul li a{
+        color: firebrick;
+        font-weight: 500;
+        padding: 5px 0;
+        display: block;
+        text-transform: capitalize;
+        text-decoration: none;
+        transition: 0.2s ease-out;
+    }
+    ul li a i{
+        width: 40px;
+        text-align: center;
+    }
+    input{
+        display: none;
+        visibility: hidden;
+  
+    }
+    .toggle{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        top: 20px;
+        left:15px;
+        z-index: 1;
+        cursor: pointer;
+        border-radius: 2px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .toggle .common{
+        position: absolute;
+        height: 2px;
+        width: 20px;
+        background-color: firebrick;
+        border-radius: 50px;
+        transition: 0.3s ease;
+    }
+    .toggle .top_line{
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .toggle .middle_line{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .toggle .bottom_line{
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    input:checked ~ .toggle .top_line{
+        left: 2px;
+        top: 14px;
+        width: 25px;
+        transform: rotate(45deg);
+    }
+    input:checked ~ .toggle .middle_line{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    input:checked ~ .toggle .bottom_line{
+        left: 2px;
+        top: 14px;
+        width: 25px;
+        transform: rotate(-45deg);
+    }
+    input:checked ~ .slide{
+        transform: translateX(0);
+        box-shadow:  0 0 15px rgba(0,0,0,0.5);
+    }
+    .navbar{
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+        background-color: rgb(170, 77, 11);
+     
+    }
+    a :hover{
+            background-color: firebrick;
+            color: #fff;
+    }
+
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+    h5{
+      text-align: center;
+        font-size: 70px;
+    }
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    p{
+        text-align: center;
+        font-size: 22px;
+    }
+    h3{
+        text-align: center;
+        font-size: 30px;
+    }
+</style>
+</head>
+<body>
+    <label>
+        <nav class="navbar">
+            <img src="Giaar.png" alt="">
+        </nav>
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+        <div class = "slide">
+            <h1>MENU</h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="Commission.html">Commission</a></li>
+                <li><a href="ABOUT US.html">About Us</a></li>
+                <li><a href="Service.html">Services</a></li>
+            </ul>
+
+        </div>
+    </label>
+
+    <h5>ABOUT US</h5>
+    <h2>Welcome to Giaar's World of Art</h2>
+    <p>
+        At my gallery, I believe that art is not just a visual experience but a journey of the soul. My mission is to capture the essence of the 
+        human spirit and the beauty of the world around us through vibrant colors, intricate details, and evocative themes. Whether you're an art enthusiast, 
+        a seasoned collector, or someone discovering the magic of art for the first time, there's something here to inspire and captivate you.
+    </p>
+    <br>
+    <br>
+    <br>
+    <h2>Custom Commissions</h2>
+    <p>In addition to my curated collection, I offers custom commissions, allowing you to bring your vision to life.
+        Whether you have a specific idea in mind or need guidance to create something truly unique, 
+        I will work closely with you to ensure your commissioned piece exceeds your expectations.</p>
+    <h2>Stay Connected</h2>
+    <br>
+    <br>
+    <br>
+    <p> I love to connect with my audience and share the latest updates on new works, exhibitions, and events. 
+        Follow me on Facebook, Instagram, Twitter and sign up for our newsletter to stay informed about all things Giaar.</p>
+        <br>
+        <br>
+        <br>
+        <h3>Contact Us</h3>
+        <p>09935364967 <br>gianaguila03@gmail.com <br>Giaar</p>
+</body>
+</html>
